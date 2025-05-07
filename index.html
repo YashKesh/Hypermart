@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Flow Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout Flow Optimizer</h1>
+    </header>
+    <main>
+        <section id="customer-input-section" class="card">
+            <h2>Add New Customer</h2>
+            <form id="customer-form">
+                <label for="item-count">Number of Items:</label>
+                <input type="number" id="item-count" name="itemCount" min="1" required placeholder="e.g., 5">
+                <button type="submit">Add Customer</button>
+            </form>
+        </section>
+
+        <section id="checkout-lanes-section">
+            <h2>Checkout Lanes</h2>
+            <div id="lanes-container" class="lanes-grid">
+                <!-- Lanes will be dynamically generated here by script.js -->
+            </div>
+        </section>
+
+        <section id="assignment-log-section" class="card">
+            <h2>Assignment Log</h2>
+            <div id="log-container">
+                <ul id="log-list">
+                    <!-- Log entries will be dynamically generated here by script.js -->
+                     <li class="empty-log">No assignments yet.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simple Checkout Flow Simulation</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
